@@ -76,22 +76,60 @@ the box plot depicts five key numbers of data
 
 ![boxplot_1](https://raw.githubusercontent.com/28kayak/statistics/main/stanford-statistics/img/boxplot_1.png)
 
+The boxplot conveys less information than a histgram. However, it takes up less space and so it well suited to compare several data set.
+
+## Scatterplot
+The scatterplot is used to depict data that comes as pairs. It visualizes the relationship between the two variables.
+
+---
+
+# Providing Context is Key for Statistical Analyses
+Statistical analyses typically compare the observed data to a reference.
+Therefore, context is essential for graphical integrity. 
+> The Visual Display of Quantitative Information by Edward Tufte(p.74)
+
+One way to provide context is by using `small multiple`
+The compact design of the boxplot makes it well suited for this task.
+
+---
+
+# Pitfalls when Visualizing Information
+Sophisticated software makes it tempting to produce showy but poor visualizations. 
+- Should not use 3D to compare hight of bar graph. 
+> the "Gettysburg Powerpoint Presentation" by Peter Norvig
+[Gettysburg Powerpoint Presentation](https://norvig.com/Gettysburg/index.htm)
+
 --- 
+# Numerical Summary Measures
+For summerizing data with one number, use the `mean (= average)`  or the `median`. 
+The median is the number that is larger than half the data and smaller than the other half. (= some way in mid points)
+## Mean vs. Median 
+### which should we use?
+
+Mean and median are the same when the histogram is symmetric. 
+- Ex: 100 measurements of the speed of light 
+- Ex: heights and weights of people 
+
+![stanford-statistics/img/symmetric_histogram.png](https://raw.githubusercontent.com/28kayak/statistics/main/stanford-statistics/img/symmetric_histogram.png)
 
 When the histogram is skewed to the right, then the mean can be much larger than the median.
 So, if the histogram is very skewed, then use the median.
-#### theoritical example
+
+### theoritical example
 if the median sales price of 10 homes is 1 doller million, then we know that 5 homes sold for 1 doller million or more.
-if we sold that the average sales price is 1 doller million, then we can't draw such a conclusion
+
+if we sold that the average sales price is 1 doller million, then we can't draw such a conclusion.
 
 if average is 1 doller million, the sume of the 10 sales price is 10 doller million.
+
 Let's assume that 1 house sold for 8 doller million.
 Then the total of sales price of other 9 houses is 2 doller million.
+
 The average of the other 9 houses is 2 million doller / 9 = 200,000
 
 if we think that the average of sales price of 1 doller million means that most houses sold for roughly 1 doller million.
 --> it does not make sence.
-### Percentile 
+## Percentile 
 The 90th percentile of incomes is $135,00
 90% of households report an icome of $135,000 or less, and 10% report more.
 
@@ -131,8 +169,5 @@ $s = \sqrt{\frac{1}{n-1} \sum_{i=1}^{n}(x_i - \bar{x})^2}$
 The two numbers $\bar{x}$ and $s$ are often used to summarize data.
 Both are sensitive to a few large or small data.
 If that is concern (i.e. the histgram is skewed), then it is better to use the `median` and the `interquartile range`.  
-
---- 
-# [EXTRA] Industry Insight: Introduction to Abdrew Radin
 
 
