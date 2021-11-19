@@ -61,3 +61,51 @@ a **stratified random sample** devides the population into groups of similar sub
 Then one chooses a simple randome sample in each stratum and combined these.
 
 ## Bias and Chance Error
+Since the sample is drawn at random, the estimate will be different from the parameter due to **chance error**.
+Drawing another sample will result in a different chance error. 
+```
+estimate = parameter + bias + chance error
+```
+The chance error (sampling error) will get smaller as the sample size is bigger.
+Moreover, we can compute how large the chance error will be.
+
+This is not the case for the bias (systematic error): 
+Increasing the sample size just repeats the error on a larger scale, and typically we don't know how large the bias is.
+
+## Observation vs. Experiment, Confounding, and the Placebo Effect
+### Observational Studies 
+> People who eat read meat have higher rates of certain cancers than people who don't eat read meat.
+
+- this means that there is an <mark>association</mark> between red meat consumption and cancer:
+
+    There is a link between these two.
+
+- This does <mark>NOT</mark> mean that eating read meant *causes* a cancer: 
+    People who don't eat red meat are known to exercise more and drink less alcohol, and it could be the latter two isues that cause the difference in cancer rate.
+
+This is an **observational study**: It measures outcomes of interest and this can be used to establish asociation.
+
+But, **association is not causation**, because there maybe **confounding factors** such as exercise that are associated both with red meat consumption and cancer.
+
+### Randomized Controlled Experiments 
+To establish causation, an **experiment** is required:
+A **treatment** (e.g. eating red meat) is *assigned* to poeple in the **treatment gorup** but not to people in **contorl group**. 
+
+Then, the outcomes in the two groups are compared.
+To rule out confounders, both groups should be similar, apart from the reatment.
+To this end:
+- The subjects are assigned into treatment group and control group at **random**.
+- When possible, subjects in the control group get a **placebo**: it resembles the treatment but is neutral.
+    Assigning a placebo makes sure that both groups are equally affected by the **placebo effect**: the idea of being treated may have an effect by itself.
+
+- The experiment is **double-blind**: neither the subjects nor the evaluators know the assignments to treatment and control.
+
+### The placebo effect
+The placebo effect is still not fully understood and is one of the most interesting phenomena in science. 
+
+## The Logic of Randomized Controlled Experiments
+
+Randomization serves two purpose:
+- It makes the treatment gorup similar to the control group.
+    Therefore, influences other than the treatment operate equally on both groups, apart from differences due to chance.
+- It allows to assess how relevant the treatment effect is, by calculating the size of chance effects when comparing the outcomes in the two groups.
