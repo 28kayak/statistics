@@ -148,6 +148,7 @@ Recall that the boxplot gives a five number summary of data:
 - median
 - 34d quartile 
 - the largest number
+
 ![interquartile_range.png](https://raw.githubusercontent.com/28kayak/statistics/main/stanford-statistics/img/interquartile_range.png)
 
 The interquartile range = 3rd quartile - 1st quartile
