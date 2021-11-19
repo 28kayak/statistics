@@ -57,7 +57,7 @@ The nature of the data and the goal of the visualization determine which method 
     - `Density(Crowding)`: the height of the bar tells how many subjects there are for one unit on the horizontal scale. 
     - EX: the hightest density is around age 19 as 0.04 = 4% of all subjects are age 19. In contrast, only about 0.7% of subjects fall into each one year range for ages 60-80.
     - `Percentage(relative frequences)`: those are given by 
-    `are = height * width`
+    ```area = height * width```
     - EX: about 14% of all subjects fall into the age range 60-80, ebcause the corresponding area is `(20years)*(0.7% per year)=14%`
     - Alternatively, you can find this answer by eyeballing that this area makes up roughly 1/7 of the total area of histogram. So, roughly 1/7 = 14% of all subjects fall in that range. 
 
@@ -152,6 +152,7 @@ Recall that the boxplot gives a five number summary of data:
 ![interquartile_range.png](https://raw.githubusercontent.com/28kayak/statistics/main/stanford-statistics/img/interquartile_range.png)
 
 The interquartile range = 3rd quartile - 1st quartile
+
 It measures how spread out the data are. 
 
 ## The standard deviation
@@ -168,7 +169,9 @@ OR
 $s = \sqrt{\frac{1}{n-1} \sum_{i=1}^{n}(x_i - \bar{x})^2}$
 
 The two numbers $\bar{x}$ and $s$ are often used to summarize data.
+
 Both are sensitive to a few large or small data.
+
 If that is concern (i.e. the histgram is skewed), then it is better to use the `median` and the `interquartile range`.  
 
 
